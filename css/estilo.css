@@ -1,0 +1,245 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Martel', serif;
+    overflow-x: hidden;
+}
+.menu,li,a{
+    list-style: none;
+    text-decoration: none;
+   
+}
+.menu{
+    background:#FFFFFF;
+    width: 20%;
+    margin: 15px;
+    border-radius: 5px;
+
+}
+input{
+    display: none;
+}
+.menu{
+    display: none;
+    position: fixed;
+    margin-top: 60px;
+    
+}
+#menu-abrir:checked ~ .menu{
+    display: block;
+}
+.icono-mobile{
+    width: 45px;
+    height: auto;
+    margin: 15px;
+    cursor: pointer;
+    position:fixed;
+}
+.foto-perfil{
+    background: url(../imagenes/foto.jpg)  fixed no-repeat;
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-color:#050000;
+    margin-top: -12px;
+}
+.content-ubicación{
+    background: url(../imagenes/map_tile.png)100%;
+    width: 40%;
+    height:200px;
+    padding: 30px;
+    margin: 20px 20px;
+}
+.ubicación{
+    background-color: white;
+    margin: 20px;
+    height: 170px;
+    border-radius: 5px;
+    width: 96%;
+}
+button{
+    float: right;
+    margin-top: -36px;
+    cursor: pointer;
+}
+.ubicación-interno{    
+    padding: 3px 20px;
+
+}
+.descripción{
+    margin: 20px 20px;
+    width: 45%;
+    text-align: justify;
+}
+.información-aside{
+    width: 40%;  
+    float: right;;
+    margin-top: -823px;  
+}
+.foto-reino{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+.info{
+    text-align: justify;
+    margin: 50px 50px;
+}
+.soyp{
+    font-size: 25px;
+}
+.foto-pastores{
+    float: right;
+    width:40%;
+    margin-top: -5%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    
+}
+h1{
+    margin:30px 20px;
+}
+h3{
+    text-align: center;
+}
+.galeria{
+    width: 98%;
+    margin: auto;
+    padding: 0;    
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap:wrap;
+  
+}
+.galeria,li{
+    margin: 5px;
+
+}
+.imagenesservicio{
+    width: 250px;
+    height: 150px;
+    
+}
+.modal{
+    display: none;
+}
+.modal:target{
+    display: block;
+    position: fixed;
+    background: #050000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.imagen{
+    width: 100%;
+    height: 50%;
+    margin-top:150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen .a:nth-child(2){
+    margin: 0;
+    height:100%;
+    flex-shrink: 2;
+}
+.a{
+    color: #FFFFFF;
+    font-size: 35px;
+    margin: 0 10px;
+}
+.s1{
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.cerrar{
+    display:block;
+    color: #FFFFFF;
+    width: 25px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+
+}
+@media(max-width:768px){
+    .foto-perfil{
+        background: url(../imagenes/foto-mobil.jpg) 100% fixed no-repeat;
+        position: relative;
+        z-index: 2;
+        margin-top: -30%;;
+        background-position: center;
+      
+    }   
+    .icono-mobile{
+        position:fixed;
+        margin-top: 34%;
+       
+    }
+    .menu{
+        position:fixed;
+        margin-top: 170px;
+        width: 85%;
+    }
+    .content-ubicación{
+        width: 70%;
+        margin-top: -70px;
+    }
+    .ubicación{
+        margin: 0;
+        height: 200px;
+        border-radius: 5px;
+        width: 100%;
+    }
+    button{
+        margin-top: 5px;
+    }
+    
+.descripción{
+    margin: 20px 20px;
+    width: 85%;
+    text-align: justify;
+}
+
+.información-aside{
+    width: 100%;
+    margin-top: 30px;
+}
+.info{
+    width: 90%;
+    margin: 20px 20px;
+}
+h1{
+    margin-top: -60px;
+}
+
+.foto-pastores{
+    width:90%;
+    margin-top: -5%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    
+}
+.servicios{
+    margin-top: -60px;
+    text-align: center;
+}
+.pastores-titulo{
+    text-align: center;
+}
+
+.imagenesservicio{
+    width: 300px;
+    height: 250px;
+    
+}
+}
